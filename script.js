@@ -15,8 +15,8 @@ image.addEventListener('click', () => {
 });
 
 function moveImage() {
-    const randomX = Math.random() * 50 ;
-    const randomY = Math.random() * 50;
+    const randomX = Math.random() * 40 ;
+    const randomY = Math.random() * 40;
 
     image.style.position = 'absolute';
     image.style.left = `${randomX}px`;
