@@ -27,4 +27,9 @@ function showVideo() {
     image.style.display = 'none';
     video.style.display = 'block';
     video.play();
+
+    setTimeout(() => {
+        video.style.display = 'none'; // Скрыть видео и текст через 15 секунд
+        document.body.style.backgroundImage = 'url("your-background-image.jpg")'; // Заменить фон
+    }, 10000);
 }
