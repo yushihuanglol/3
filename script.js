@@ -3,6 +3,7 @@ let clickCount = 0;
 
 const image = document.getElementById('movable-image');
 const video = document.getElementById('video');
+const image1 = document.getElementById('image');
 
 image.addEventListener('click', () => {
     clickCount++;
@@ -32,4 +33,9 @@ function showVideo() {
         video.style.display = 'none'; // Скрыть видео и текст через 15 секунд
         document.body.style.backgroundImage = 'url("your-background-image.jpg")'; // Заменить фон
     }, 10000);
+
+    setTimeout(() => {
+        image1.style.display = 'block'; // Скрыть видео и текст через 15 секунд
+        document.body.style.backgroundImage = 'url("background-image.jpg")';
+    }, 15000);
 }
